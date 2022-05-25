@@ -31,7 +31,7 @@ What could have been improved:
 -Form design.
 -Responsive Design.
 
-
+#Directory Structure:
 
 app/
 ├─ Http/
