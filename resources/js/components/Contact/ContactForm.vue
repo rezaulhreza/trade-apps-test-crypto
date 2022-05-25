@@ -41,7 +41,7 @@
                     </div>
                         
     <div class="submit-contact">
-        <button class="button">Send Message</button>
+        <button  class="button">Send Message</button>
     </div>
                     
 
@@ -79,6 +79,7 @@ export default {
 
 //actions
     methods: {
+       
         sendContact() {
           axios.post('/api/send-email', {
             'name': this.form.name,
@@ -90,6 +91,9 @@ export default {
             this.flash=true;
             this.flashMessage=res.data;
             setTimeout( () =>{this.flash = false},3000)
+
+          
+            
           }).catch(e=> {
            if(e.response.status==422){
             this.errorName = e.response.data.errors['name'] ? e.response.data.errors['name'][0]:'';
