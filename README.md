@@ -2,8 +2,8 @@
 
 Brief:
 
-```Thanks for taking part in the interview process. This practical test is just here so that we can
-get a better understanding of your knowledge.```
+Thanks for taking part in the interview process. This practical test is just here so that we can
+get a better understanding of your knowledge.
 
 ##What to do:
 - In this test, we would like you to re-create the screenshot of the crypto website (website.png) using the Vue and Laravel Framework. (required)
