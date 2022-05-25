@@ -32,3 +32,35 @@ What could have been improved:
 -Responsive Design.
 
 
+
+app/
+├─ Http/
+│  ├─ Controller/
+│  │  ├─ ContactController.php
+├─ Mail/
+│  ├─ ContactEmail.php
+├─ Requests/
+│  ├─ ContactFormRequest.php
+resources/
+├─js/
+├─ components/
+│  ├─ Contact/
+│  │  ├─ ContactAddress.vue
+│  │  ├─ ContactForm.vue
+│  │  ├─ ContactHeading.vue
+│  │  ├─ Index.vue
+│  ├─ Header/
+│  │  ├─ Hero.vue
+│  │  ├─ Nav.vue
+│  ├─ AppComponent.vue
+│  ├─ Home.vue
+├─ app.js
+├─ routes.js
+
+routes/
+├─ api.php
+├─ web.php
+
+
+
+
