@@ -83,6 +83,21 @@ color: #fff;
 .hero-left >h1 {
   font-weight: bold;
 }
+
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
 /**left padding 5%*/
  .hero-left >* {
  padding-top: 5%;
@@ -184,14 +199,11 @@ color: #53535378;
   
 
 /**this button is for crypto for*/
-.centered-button> #button-wrapper {
+.centered-button , .button-wrapper {
   height:30px; 
    width:100px; 
    /**responsible for centering the button*/
-   margin: -20px -50px; 
-   position:relative;
-   top:50%; 
-   left:50%;
+   margin: 0 auto;
    /******/
    border-radius: 5px;
    font-size: 15px;
@@ -390,16 +402,102 @@ font-size: 25px;
   padding: 10px;
 }
 
-
+.movearea {
+  transition: 0.3s background-color ease;
+  visibility: hidden;
+}
 
 /**optional, not in working condition */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 
-.hero>* {
-width: 100%;
-flex-basis: 400;
+.hero{
+
 flex-direction: column;
+
 }
+
+.form-wrapper{ 
+  display: grid;
+  margin-top: 20px;
+  align-items: center;
+  margin-right: auto;
+  padding-bottom: 6rem;
+  
+  
+}
+.contact-form .form-wrapper { 
+  margin: 10px;
+}
+.crypto .form-wrapper { 
+  width: -webkit-fit-content; 
+  width: -moz-fit-content; 
+  width: fit-content;
+}
+
+.subscription-form {
+
+  width: auto;
+  
+  }
+  
+  .hero .hero-right {
+    padding-left: 0px;
+    margin-left: 0px;
+   
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 2px;
+  padding: 5px;
+
+
+ 
+
+}
+
+.topnav a.active { 
+  margin: 5px;
+  text-align: center;
+  padding: 10px;
+}
+nav {
+  background-color: #1e3d80;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-weight: bold;
+  padding-top: -2px;
+  border-radius: 2px;
+}
+
+ .header{
+   top: 0;
+ } 
+
+.contact-section{
+  display: contents;
+  margin: 5px;
+}
+
+.contact-section> .form-wrapper{
+  margin: 10px;
+}
+.subscription-form>* {
+  margin-top:5px;
+padding: 2px;
+ 
+  
+  }
+
+  .hero .hero-left {
+    font-size: 15px;
+    margin-left: 20px;
+   
+}
+
+
 
 }
 

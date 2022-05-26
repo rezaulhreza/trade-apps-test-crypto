@@ -1,5 +1,8 @@
 <template>
-    <div class="hero">
+    <!-- <div class="hero" @mousemove="onMousemove"
+  :style="{ backgroundColor: `hsl(${x}, 50%, 50%)` }"
+> -->
+       <div class="hero">
 <div class="hero-left">
     <h1>Buy and Sell cryptocurrency</h1>
     <div class="hero-subtitle">
@@ -52,7 +55,7 @@
                     <p class="conversion-info">1 USD = 0.000088 BTC <span class="expected-rate">Expected Rate</span> <br> <span class="no-fees">No extra fees</span></p>
 
  <div class="centered-button">
-<button class="button" id="button-wrapper">Buy Now</button>
+<button class="button button-wrapper">Buy Now</button>
 </div>
 
 
@@ -68,3 +71,22 @@
 
 </div>
 </template>
+
+<script>
+import axios from 'axios'
+
+export default {
+    name: 'Contact',
+//     data() {
+//     return {
+//       x: 0
+//     }
+//   },
+//   methods: {
+//     onMousemove(e) {
+//       this.x = e.clientX
+//     }
+//   }
+}
+
+</script>
