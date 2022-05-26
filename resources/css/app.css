@@ -407,7 +407,7 @@ font-size: 25px;
   visibility: hidden;
 }
 
-/**optional, not in working condition */
+
 @media only screen and (max-width: 900px) {
 
 .hero{

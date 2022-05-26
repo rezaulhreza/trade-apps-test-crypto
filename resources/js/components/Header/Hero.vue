@@ -1,7 +1,5 @@
 <template>
-    <!-- <div class="hero" @mousemove="onMousemove"
-  :style="{ backgroundColor: `hsl(${x}, 50%, 50%)` }"
-> -->
+ 
        <div class="hero">
 <div class="hero-left">
     <h1>Buy and Sell cryptocurrency</h1>
@@ -71,22 +69,3 @@
 
 </div>
 </template>
-
-<script>
-import axios from 'axios'
-
-export default {
-    name: 'Contact',
-//     data() {
-//     return {
-//       x: 0
-//     }
-//   },
-//   methods: {
-//     onMousemove(e) {
-//       this.x = e.clientX
-//     }
-//   }
-}
-
-</script>
